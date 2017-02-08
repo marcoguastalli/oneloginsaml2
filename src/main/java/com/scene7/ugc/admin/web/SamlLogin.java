@@ -34,8 +34,6 @@ public class SamlLogin extends HttpServlet {
         try {
             AuthHeader authHeader = new AuthHeader();
             authHeader.setSamlResponse(request.getParameter("SAMLResponse"));
-            authHeader.setUser("marco.guastalli@netcentric.biz");
-            authHeader.setPassword("Welcome1$");
             authHeader.setAppName("Adobe.Scene7.UGC");
             authHeader.setAppVersion("1");
             authHeader.setLocale("en");
